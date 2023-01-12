@@ -2,12 +2,12 @@ var express = require('express');
 var router = express.Router();
 var Category = require('../models/Category.js')
 var Entry = require('../models/Entry.js')
-var Server = require('../server.js')
 
+ 
 /* GET home page. */
 router.get("/", function (req, res, next) {
   // get courses from DB
-  Entry.find(function (err, entrys) {
+  Category.find(function (err, entrys) {
     if (err) return console.error(err);
     let jsonObj = JSON.stringify(entrys);
     res.contentType("application/json");
