@@ -1,6 +1,5 @@
 var express = require("express");
 var mongoose = require("mongoose");
-var Category = require("../models/Category.js");
 // create DB schema for entrys
 let entrySchema = new mongoose.Schema({
   title: { type: String, required: true },
