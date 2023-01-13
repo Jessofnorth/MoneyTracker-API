@@ -11,6 +11,6 @@ let entrySchema = new mongoose.Schema({
 
   notes: { type: String },
 
-  category: { type: mongoose.Schema.Types.ObjectId, ref: "Category" },
+  category_id: { type: String, required: true },
 });
 module.exports = mongoose.model("Entry", entrySchema);

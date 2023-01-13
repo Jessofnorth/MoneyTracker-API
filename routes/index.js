@@ -46,7 +46,7 @@ router.post("/", async (req, res) => {
     date: req.body.date,
     amount: req.body.amount,
     notes: req.body.notes,
-    category: req.body.category
+    category_id: req.body.category_id
   });
   try {
     const entrySaved = await entryNew.save();
@@ -73,8 +73,8 @@ router.patch("/:id", getEntry, async (req, res) => {
   if(req.body.notes != null){
     res.entry.notes = req.body.notes
   }
-  if(req.body.category != null){
-    res.entry.category = req.body.category
+  if(req.body.category_id != null){
+    res.entry.category_id = req.body.category_id
   }
   try {
     const entryUpdated = await res.entry.save();
