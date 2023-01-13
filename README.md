@@ -1,5 +1,7 @@
 # MoneyTracker API
 This API is made with Node.js, Express and MongoDB Atlas with Mongoose Schemas. It has CRUD functionality and stores data for a Money tracker applikation.
+By: Jessica Ejelöv 
+For: Project assigment for the course "Web Development with Javascript" at Mid Sweden University
 
 ## Links
 The link to the API: [https://moneytracker-8032.onrender.com/](MoneyTracker)
