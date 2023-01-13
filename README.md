@@ -1,17 +1,16 @@
 # MoneyTracker API
-This API is made with Node.js, Express and MongoDB Atlas. It has CRUD functionality and stores data for a Money tracker applikation.
+This API is made with Node.js, Express and MongoDB Atlas with Mongoose Schemas. It has CRUD functionality and stores data for a Money tracker applikation.
 
-## Länk
-En liveversion av APIet finns tillgänglig på följande URL: [https://testserver.test/api.php](https://miun.se)
+## Links
+The link to the API: [https://moneytracker-8032.onrender.com/](MoneyTracker API)
 A demo of the client webbpage is available here: 
 
-## Installation, databas
-Kopiera över källkodsfilerna till webbserver, och kör installations-skriptet install.php.
-Installations-skriptet skapar databas-tabeller enligt nedanstående:
-|Tabell-namn|Fält  |
+## The database and schemas
+The datebas contains two collections: entries and categories
+|Collection|Schema |
 |--|--|
-|Tabell1  | **id** (int(11), **fält1** (varchar(256), **fält2** (varchar(256)  |
-|Tabell2  | **id** (int(11), **fält1** (varchar(256), **fält2** (varchar(256)  |
+|Entries | **id** (Object), **title** (String), **amount** (Number), **date** (Date), **notes** (String), **category_id** (String)  |
+|Categories  | **id** (Object), **name** (String)|
 
 ## Klasser och metoder
 ### Courses
