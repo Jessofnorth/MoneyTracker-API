@@ -1,9 +1,16 @@
-var express = require('express');
- var mongoose = require('mongoose');
-  // create DB schema for entrys
-  let entrySchema = new mongoose.Schema({
-    title: String,
-    date: String,
-    amount: Number,
-  });
-  module.exports = mongoose.model("Entry", entrySchema);
+var express = require("express");
+var mongoose = require("mongoose");
+var Category = require("../models/Category.js");
+// create DB schema for entrys
+let entrySchema = new mongoose.Schema({
+  title: { type: String, required: true },
+
+  date: { type: Date, required: true, default: Date.now },
+
+  amount: { type: Number, required: true },
+
+  notes: { type: String },
+
+  category: { type: mongoose.Schema.Types.ObjectId, ref: "Category" },
+});
+module.exports = mongoose.model("Entry", entrySchema);
