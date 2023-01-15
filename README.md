@@ -12,7 +12,7 @@ The datebas contains two collections: entries and categories
 |Collection|Schema |
 |--|--|
 |Entries | **_id** (Object), **title** (String), **amount** (Number), **date** (Date), **notes** (String), **category_id** (String)  |
-|Categories  | **_id** (Object), **name** (String)|
+|Categories  | **_id** (Object), **name** (String), **maxbudget** (Number)|
 
 ## Routes
 ### /entries
@@ -50,5 +50,6 @@ Exampel of JSON object:
 ```
 {
    name: 'Food',
+   maxbudget: '300'
 }
 ```

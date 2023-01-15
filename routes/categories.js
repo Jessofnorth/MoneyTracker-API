@@ -43,6 +43,7 @@ router.post("/", async (req, res) => {
   // new category object 
   let categoryNew = new Category({
     name: req.body.name,
+    maxbudget: req.body.maxbudget,
   });
   try {
     const categorySaved = await categoryNew.save();
@@ -60,6 +61,9 @@ router.post("/", async (req, res) => {
 router.patch("/:id", getCategory, async (req, res) => {
   if(req.body.name != null){
     res.category.name = req.body.name
+  }
+  if(req.body.maxbudget != null){
+    res.category.maxbudget = req.body.maxbudget
   }
   try {
     const categoryUpdated = await res.category.save();

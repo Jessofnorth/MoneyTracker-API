@@ -5,5 +5,8 @@ var express = require('express');
     name: {
       type: String,
     required: true},
+    maxbudget: {
+      type: Number,
+    required: true},
   });
   module.exports = mongoose.model("Category", categorySchema);
