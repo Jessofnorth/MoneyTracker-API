@@ -45,7 +45,6 @@ router.post("/", async (req, res) => {
     title: req.body.title,
     date: req.body.date,
     amount: req.body.amount,
-    notes: req.body.notes,
     category_id: req.body.category_id
   });
   try {
@@ -69,9 +68,6 @@ router.patch("/:id", getEntry, async (req, res) => {
   }
   if(req.body.amount != null){
     res.entry.amount = req.body.amount
-  }
-  if(req.body.notes != null){
-    res.entry.notes = req.body.notes
   }
   if(req.body.category_id != null){
     res.entry.category_id = req.body.category_id
