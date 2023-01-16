@@ -8,8 +8,6 @@ let entrySchema = new mongoose.Schema({
 
   amount: { type: Number, required: true },
 
-  notes: { type: String },
-
   category_id: { type: String, required: true },
 });
 module.exports = mongoose.model("Entry", entrySchema);
