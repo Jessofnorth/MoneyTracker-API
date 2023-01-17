@@ -11,7 +11,7 @@ A demo of the client webbpage is available here:
 The datebas contains two collections: entries and categories
 |Collection|Schema |
 |--|--|
-|Entries | **_id** (Object), **title** (String), **amount** (Number), **date** (Date), **category_id** (String)  |
+|Entries | **_id** (Object), **title** (String), **amount** (Number), **date** (Date), **category** (String)  |
 |Categories  | **_id** (Object), **name** (String), **maxbudget** (Number)|
 
 ## Routes
@@ -31,7 +31,7 @@ Exampel of JSON object:
    title: 'Rent',
    date: '2023-01-14',
    amount: 6000,
-   category_id: "ksndfposda9824975elms"
+   category: "ksndfposda9824975elms"
 }
 ```
 
