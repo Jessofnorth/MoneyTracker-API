@@ -4,7 +4,8 @@ By: Jessica Ejelöv
 For: Project assigment for the course "Web Development with Javascript" at Mid Sweden University
 
 ## Links
-The link to the API: [https://moneytracker-8032.onrender.com/](MoneyTracker)
+The link to the API: [https://moneytracker-8032.onrender.com/](MoneyTracker) 
+
 A demo of the client webbpage is available here: [https://money-tracker-jeej.netlify.app/](Money-Tracker-jeej)
 
 ## The database and schemas
